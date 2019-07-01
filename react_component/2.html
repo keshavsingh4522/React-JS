@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>display</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- Load React API -->
+<script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<!-- Load React DOM-->
+<script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<!-- Load Babel Compiler -->
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root1"></div>
+    <div id="root"></div>
+    <script type="text/babel">
+    // funtion name first letter should be capital or title case/capitalize case
+    function Kesh()
+    {
+        return <h1>welcome to react component/function</h1>;
+    }
+    ReactDOM.render(<Kesh />,document.getElementById('root1'));
+    
+    // by render method
+    class Pk extends React.Component
+    {
+        render(){return <h1>by rander method</h1>;}
+    }
+    ReactDOM.render(<Pk />,document.getElementById('root'));
+    
+    </script>
+</body>
+</html>
